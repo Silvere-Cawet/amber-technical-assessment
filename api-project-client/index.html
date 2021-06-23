@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <title>API-Client</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #212121;">
+        <div class="container">
+            <a class="navbar-brand" id="brand" href="index.html">
+                <p>User Data API Client Interface</p>
+            </a>    
+        </div>
+    </nav>
+
+    <!-- <div class="container my-5"></div> -->
+
+    <div class="container mt-1">
+        <div class="row justify-content-center align-items-center" id="profile-banner">
+            <div class="col-3 text-center">
+                <img class="p-lg-5 w-100" src="" id="profile-pic" alt="profile-pic">
+            </div>
+            <div class="col-7">
+                <p class="display-4" id="name">Full name</p>
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <h2 class="text-center">User Details</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="container-fluid my-3">
+            <div class="row">
+                <div class="col-6">
+                    <h4 class="mb-2">Personal Details</h4>
+                    <table>
+                        <!-- <thead>
+                            <tr>
+                                <th scope="col">Personal Details</th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                            <tr>
+                                <th scope="row">First Name</th>
+                                <td id="first-name">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Last Name</th>
+                                <td id="last-name">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Gender</th>
+                                <td id="gender">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Title</th>
+                                <td id="title">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Date Of Birth &emsp;</th>
+                                <td id="dob-date">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Age</th>
+                                <td id="dob-age">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nationality</th>
+                                <td id="nat">xxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-6">
+                    <h4 class="mb-2">Identity</h4>
+                    <table>
+                        <!-- <thead>
+                            <tr>
+                                <th scope="col">Identity</th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                            <tr>
+                                <th scope="row">ID Name &emsp;</th>
+                                <td id="id-name">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">ID Number &emsp;</th>
+                                <td id="id-number">xxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <h4 class="mb-2">Contact Details</h4>
+                    <table>
+                        <!-- <thead>
+                            <tr>
+                                <th scope="col">Contact Details</th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                            <tr>
+                                <th scope="row">Email </th>
+                                <td id="email">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Phone &emsp;</th>
+                                <td id="phone">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Cell</th>
+                                <td id="cell">xxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!--  -->
+        <div class="container-fluid my-3">
+            <div class="row">
+                <div class="col-6">
+                    <h4 class="mb-2">Physical Address</h4>
+                    <table>
+                        <!-- <thead>
+                            <tr>
+                                <th scope="col">Address</th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                            <tr>
+                                <th scope="row">Street Number &emsp;</th>
+                                <td id="street-number">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Street Name</th>
+                                <td id="street-name">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">City</th>
+                                <td id="city">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">State</th>
+                                <td id="state">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Country</th>
+                                <td id="country">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Postcode</th>
+                                <td id="postcode">xxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-6">
+                    <h4 class="mb-2">Coordinates</h4>
+                    <table>
+                        <!-- <thead>
+                            <tr>
+                                <th scope="col">Coordinates</th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                            <tr>
+                                <th scope="row">Latitude &emsp;</th>
+                                <td id="latitude">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Longitude</th>
+                                <td id="longitude">xxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <h4 class="mb-2">Timezone</h4>
+                    <table>
+                        <!-- <thead>
+                            <tr>
+                                <th scope="col">Coordinates</th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                            <tr>
+                                <th scope="row">Offset &emsp;</th>
+                                <td id="offset">xxx</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description &emsp;</th>
+                                <td id="description">xxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <br>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <!-- Accordion 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Map View
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <div class="col-12">
+                            <div id="Map" style="width:100%;height:400px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Accordion 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Admin Info
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4 class="mb-2">Login</h4>
+                                <table>
+                                    <!-- <thead>
+                                        <tr>
+                                            <th scope="col">Login</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">UUID &emsp;</th>
+                                            <td id="uuid">xxx</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Username &emsp;</th>
+                                            <td id="username">xxx</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Password</th>
+                                            <td id="password">xxx</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+            
+                            <div class="col-6">
+                                <h4 class="mb-2">Registration</h4>
+                                <table>
+                                    <!-- <thead>
+                                        <tr>
+                                            <th scope="col">Registration</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Registration Date &emsp;</th>
+                                            <td id="reg-date">xxx</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td id="reg-age">xxx</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br><br>
+                            </div>
+                            <hr>
+                            <div class="col-12">
+                                <h4 class="mb-2">Encryption</h4>
+                                <table>
+                                    <!-- <thead>
+                                        <tr>
+                                            <th scope="col">Encryption</th>
+                                        </tr>
+                                    </thead> -->
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Salt</th>
+                                            <td id="salt">xxx</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">MD5</th>
+                                            <td id="md-5">xxx</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">SHA1</th>
+                                            <td id="sha-1">xxx</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">SHA256 &emsp;</th>
+                                            <td id="sha-256">xxx</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">
+                    <span id="seed">xxx</span>&emsp;
+                    <span id="results">xxx</span>&emsp;
+                    <span id="page">xxx</span>&emsp;
+                    <span id="version">xxx</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid align-items-center mt-5 pt-3 text-light" id="footer">
+        <div class="row">
+            <hr>
+            <p class="text-center">Made by Silvere Cawet</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACmcjPfJpcCYfFv_7M3st1PdkFeMledRY&callback=loadMap"></script>
+
+</body>
+</html>

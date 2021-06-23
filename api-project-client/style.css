@@ -1,0 +1,17 @@
+#profile-pic {
+    width: 100%;
+    border-radius: 50%;
+}
+
+table {
+    font-size: 1.3vw;
+}
+
+#profile-banner {
+    border: 1px solid lightgray;
+}
+
+#footer {
+    background-color: #212121;
+    min-height: 100px;
+}
